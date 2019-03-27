@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/hfu/cs100/issues"
   },
-  "homepage": "https://github.com/hfu/cs100#readme"
+  "homepage": "https://github.com/hfu/cs100#readme",
+  "dependencies": {
+    "config": "^3.0.1",
+    "hjson": "^3.1.2",
+    "json-text-sequence": "^0.1.1"
+  }
 }
