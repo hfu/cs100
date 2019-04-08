@@ -1,4 +1,4 @@
-throw new Error('the data are already prepared')
+// throw new Error('the data are already prepared')
 
 const config = require('config')
 const modify = require(config.get('modifyPath'))
