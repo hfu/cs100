@@ -3,6 +3,7 @@ const { spawnSync } = require('child_process')
 const groups = config.get('groups')
 const keys = Object.keys(groups)
 const dstDir = config.get('dstDir')
+const minzoom = config.get('minzoom')
 
 for (let key of keys) {
   const maxzoom = key === 'ocean' ? 13 : 15
@@ -10,7 +11,7 @@ for (let key of keys) {
     '--force',
     '--simplification=2',
     `--output=${dstDir}/${key}.mbtiles`,
-    '--minimum-zoom=2',
+    `--minimum-zoom=${minzoom}`,
     `--maximum-zoom=${maxzoom}`,
     '--hilbert',
     '--detect-shared-borders',

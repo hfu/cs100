@@ -39,7 +39,7 @@ const parser = new Parser()
           written = true
         }
       }
-      if (!written) console.log(`${k} was not written.`)
+      // if (!written) console.log(`${k} was not written.`)
     }
     if (count % 10000 === 0) report()
   })
